@@ -35,3 +35,35 @@ else if(marks >= 50){
 else{
     console.log("Grade F");
 }
+
+//question 3 print even numbers between 1 to 100
+console.log("Question 3");
+console.log("Print even numbers between 1 to 100");
+
+for(let i = 1; i <= 100; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
+
+//question 4 guessing game
+console.log("Question 4");
+console.log("Guessing game");
+
+import math from "mathjs";
+let ran = math.randomInt(1, 100);
+let count = 0;
+
+do{
+    let guess = prompt("Enter your guess: ");
+    count++;
+    if(guess == ran){
+        console.log("Congratulations! You have guessed the correct number in ", count, " attempts");
+    }
+    else if(guess < ran){
+        console.log("Try a higher number");
+    }
+    else{
+        console.log("Try a lower number");
+    }
+} while(guess != ran);
