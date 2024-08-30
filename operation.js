@@ -60,3 +60,24 @@ console.log("r = ", r, " s = ", s);
 console.log("r && s = ", r && s);                                               //logical AND
 console.log("r || s = ", r || s);                                               //logical OR
 console.log("!r = ", !r);                                                       //logical NOT
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// conditional statements
+let age = 15;
+
+if(age >= 18){
+    console.log("You are eligible to vote");
+}
+else{
+    console.log("You are not eligible to vote");
+}
+
+//check even or odd
+let num = 10;
+
+if(num % 2 == 0){
+    console.log(num, " is even");
+} else{
+    console.log(num, " is odd");
+}
+
