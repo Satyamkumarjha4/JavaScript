@@ -72,12 +72,36 @@ else{
     console.log("You are not eligible to vote");
 }
 
+console.log(age >= 18 ? "You are eligible to vote" : "You are not eligible to vote");
+console.log("The above statement is executed using ternary operator");
+
 //check even or odd
 let num = 10;
 
 if(num % 2 == 0){
-    console.log(num, " is even");
+    console.log(num, ' is even');
 } else{
-    console.log(num, " is odd");
+    console.log(num, ' is odd');
 }
 
+//age group
+let umar = 25;
+
+if(umar >= 0 && umar <= 5){
+    console.log("You are a baby");
+}
+else if(umar > 5 && umar <= 12){
+    console.log("You are a child");
+}
+else if(umar > 12 && umar <= 19){
+    console.log("You are a teenager");
+}
+else if(umar > 19 && umar <= 60){
+    console.log("You are an adult");
+}
+else if(umar > 60){
+    console.log("You are a senior citizen");
+} 
+else{
+    console.log("Invalid age");
+}
