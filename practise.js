@@ -67,3 +67,4 @@ do{
         console.log("Try a lower number");
     }
 } while(guess != ran);
+
